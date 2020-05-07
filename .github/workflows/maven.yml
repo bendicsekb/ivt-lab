@@ -5,13 +5,18 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master
+      - 'fix-*'
+      - 'CI-*'
   pull_request:
-    branches: [ master ]
+    branches: 
+      - master
+      - 'fix*'
+      - 'CI*'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
