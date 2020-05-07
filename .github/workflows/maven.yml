@@ -7,13 +7,13 @@ on:
   push:
     branches: 
       - master
-      - 'fix-*'
-      - 'CI-*'
+      - 'fix-**'
+      - 'CI-**'
   pull_request:
     branches: 
       - master
-      - 'fix*'
-      - 'CI*'
+      - 'fix-**'
+      - 'CI-**'
 
 jobs:
   build:
